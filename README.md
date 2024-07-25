@@ -14,7 +14,7 @@ In my quest to identify an effective SOAR (Security Orchestration, Automation, a
 4. **Copy the Flow URL**: Copy the URL from the "Details & Triggers" section of your flow.
 5. **Add Integration in Wazuh**: Modify the integration configuration file in Wazuh to include a new integration for custom-windmill.
 6. **Add Python Script**: Create a Python script in the `/var/ossec/integration` directory named `custom-windmill` (no `.py` extension).
-7. **Create Test Alert File**: Create an `alert.json` file to test the integration.
+7. **Create Test Alert File**: Create an `custom-alert.json` file to test the integration.
 8. **Test the Integration**: Run the provided command to test if the integration works.
 9. **Verify in Windmill.dev**: Check the "Run" section in Windmill.dev to confirm successful integration.
 
