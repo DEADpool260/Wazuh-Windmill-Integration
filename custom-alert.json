@@ -1,0 +1,39 @@
+{
+    "timestamp": "2024-07-24T08:40:29.950+0000",
+    "rule": {
+        "level": 12,
+        "description": "PAM: Login session closed.",
+        "id": "5502",
+        "firedtimes": 4,
+        "mail": false,
+        "groups": ["pam", "syslog"],
+        "pci_dss": ["10.2.5"],
+        "gpg13": ["7.8", "7.9"],
+        "gdpr": ["IV_32.2"],
+        "hipaa": ["164.312.b"],
+        "nist_800_53": ["AU.14", "AC.7"],
+        "tsc": ["CC6.8", "CC7.2", "CC7.3"]
+    },
+    "agent": {
+        "id": "000",
+        "name": "wazuh-server"
+    },
+    "manager": {
+        "name": "wazuh-server"
+    },
+    "id": "1721810429.30990",
+    "full_log": "Jul 24 08:40:29 wazuh-server sshd[27695]: pam_unix(sshd:session): session closed for user wazuh-user",
+    "predecoder": {
+        "program_name": "sshd",
+        "timestamp": "Jul 24 08:40:29",
+        "hostname": "wazuh-server"
+    },
+    "decoder": {
+        "parent": "pam",
+        "name": "pam"
+    },
+    "data": {
+        "dstuser": "wazuh-user"
+    },
+    "location": "/var/log/secure"
+}
